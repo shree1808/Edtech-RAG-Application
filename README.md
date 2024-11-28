@@ -1,9 +1,9 @@
 ## RAG Pipeline for confidential Edtech documents
-### LangChain, LangSmith, Chroma and FAISS Vector store, Ollama (llama3.2), Streamlit.
+#### Tools Used: LangChain, LangSmith, Chroma and FAISS Vector store, Ollama (llama3.2), Streamlit.
 
 
 
-#### Notion of a Prompt :
+### Notion of a Prompt :
 Placeholder where we pass custom instructions/behavior for the LLM based on the context and question asked by the user.
 
 Example of a normal prompt :
