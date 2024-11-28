@@ -4,7 +4,8 @@
 
 
 * Notion of a Prompt
->> Placeholder where we pass custom instructions/behavior for the LLM based on the context and question asked by the user.
+Placeholder where we pass custom instructions/behavior for the LLM based on the context and question asked by the user.
+
 Example of a normal prompt :
 '''
 template = 
@@ -35,9 +36,9 @@ a) Create a chain that includes the following:
     | StrOutputParser()
     | (lambda x: x.split("\n")) [Creates a list of questions]
 
->> All this to get those distinct questions
+ All this to get those distinct questions
 
 b) Later we create a function that would combine the responses to those questions and would be feed as an entire corpus to the original question with the retriever
  generate_questions | retriever.map() | get_unique_docs
 
->> This corpus would serve as context from which the original question would be answered. 
+ This corpus would serve as context from which the original question would be answered. 
