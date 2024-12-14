@@ -3,7 +3,7 @@
 
 
 
-### Notion of a Prompt :
+### * Notion of a Prompt :
 Placeholder where we pass custom instructions/behavior for the LLM based on the context and question asked by the user.
 
 Example of a normal prompt :
@@ -16,7 +16,7 @@ Question : {question}
 '''
 
 
-#### Getting started with Query Translation
+### * Getting started with Query Translation
 
 It involves approaches like Multi-Query and RAG Fusion:
 * Multi-Query involves breaking down the question into different sub-questions and the taking the union of the context obtained for those questions and finally passing it to the original question.
