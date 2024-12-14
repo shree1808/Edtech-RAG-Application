@@ -3,7 +3,7 @@
 
 
 
-### * Notion of a Prompt :
+### Notion of a Prompt :
 Placeholder where we pass custom instructions/behavior for the LLM based on the context and question asked by the user.
 
 Example of a normal prompt :
@@ -16,10 +16,11 @@ Question : {question}
 '''
 
 
-### * Getting started with Query Translation
+### Getting started with Query Translation
 
 It involves approaches like Multi-Query and RAG Fusion:
-* Multi-Query involves breaking down the question into different sub-questions and the taking the union of the context obtained for those questions and finally passing it to the original question.
+#### Multi-Query:
+ It involves breaking down the question into different sub-questions and the taking the union of the context obtained for those questions and finally passing it to the original question.
 Example Prompt :
 '''
 You are an AI language model assistant. Your task is to generate five different versions of the given user question 
@@ -41,3 +42,8 @@ Later Steps:
  generate_questions | retriever.map() | get_unique_docs
 
  This corpus would serve as context from which the original question would be answered. 
+
+#### RAG-Fusion
+Like Multi-query we break down the input query into 'k' different questions, later with the help of retriever we get the context of those k queries. We then map them to the Reciprocal Ranked Fusion function which provides the fused scores for each document.
+
+The top ranked documents are passed again to the llm alongside the original question. This process has less Abstraction.
