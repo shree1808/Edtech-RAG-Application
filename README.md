@@ -6,16 +6,6 @@
 ### Notion of a Prompt :
 Placeholder where we pass custom instructions/behavior for the LLM based on the context and question asked by the user.
 
-Example of a normal prompt :
-'''
-template = 
-Answer the question based on the provided content only 
-Think Step by step before providing a detailed response: 
-{context}
-Question : {question}
-'''
-
-
 ### Getting started with Query Translation
 It involves approaches like Multi-Query and RAG Fusion:
 
