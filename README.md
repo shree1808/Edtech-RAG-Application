@@ -1,5 +1,5 @@
 ## RAG Pipeline for confidential Edtech documents
-#### Tools Used: LangChain, LangSmith, Chroma and FAISS Vector store, Ollama (llama3.2), Streamlit.
+#### Tools Used: LangChain, LangSmith, Chroma Vector store, Ollama (llama3.2), Streamlit.
 
 
 
